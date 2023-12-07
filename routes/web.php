@@ -87,8 +87,8 @@ Route::get('hapus-pengurus/{id_pengurus}', [PengurusController::class, 'hapus'])
 
 Route::get('user', [UserController::class, 'index'])->name('user');
 Route::post('input-user', [UserController::class, 'input'])->name('input-user');
-Route::post('edit-user/{id_user}', [UserController::class, 'edit'])->name('edit-user/{id_user}');
-Route::get('hapus-user/{id_user}', [UserController::class, 'hapus'])->name('hapus-user/{id_user}');
+Route::post('edit-user/{id}', [UserController::class, 'edit'])->name('edit-user/{id}');
+Route::get('hapus-user/{id}', [UserController::class, 'hapus'])->name('hapus-user/{id}');
 
     
 

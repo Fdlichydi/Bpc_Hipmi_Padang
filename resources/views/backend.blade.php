@@ -95,7 +95,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <a href="/berita" class="nav-link {{Request::is('berita')?'active':''}}">
                                 <i class="nav-icon fas fa-newspaper"></i>
                                 <p>
-                                    Berita
+                                    Kegiatan
                                 </p>
                             </a>
                         </li>

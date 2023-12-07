@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 01, 2023 at 05:03 AM
+-- Generation Time: Dec 07, 2023 at 04:06 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -288,28 +288,6 @@ INSERT INTO `usaha` (`id_usaha`, `id_sektor`, `nama_usaha`, `deskripsi`, `logo`)
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
---
-
-CREATE TABLE `user` (
-  `id_user` int(11) NOT NULL,
-  `username` varchar(100) DEFAULT NULL,
-  `password` varchar(255) DEFAULT NULL,
-  `nama` varchar(100) DEFAULT NULL,
-  `no` varchar(20) DEFAULT NULL,
-  `foto` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `user`
---
-
-INSERT INTO `user` (`id_user`, `username`, `password`, `nama`, `no`, `foto`) VALUES
-(7, 'gmail.com', '$2y$12$uEd6oshgww4uW7mOWdP/IelIYnkfEPVp.Ov6hC7kJ7WmxPUUD1br6', 'Admin', '098098', '1__3_-removebg-preview 1.png');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `users`
 --
 
@@ -329,7 +307,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Test User', 'admin@gmail.com', '2023-11-27 23:11:48', '$2y$12$LrwDPee2zR3rZDAlGOJtwe0ImkY7hkxwe/A7dl3iijvzXJnhaj2kK', 'Ch3jXFZ7LjxC8eGQM7vJ230i6L0Mk1rMf0skJL6m5nXpYVB7aWITD0OXeK9k', '2023-11-27 23:11:48', '2023-11-27 23:11:48');
+(1, 'Test User', 'admin@gmail.com', '2023-11-27 23:11:48', '$2y$12$LrwDPee2zR3rZDAlGOJtwe0ImkY7hkxwe/A7dl3iijvzXJnhaj2kK', 'hAhxRJUSoGKRYRmBaPMgTuxbmdHz75Z1wx8rmpyLBo5QbdrRIXZpxmfchiKp', '2023-11-27 23:11:48', '2023-11-27 23:11:48'),
+(2, 'Fani', 'fani@gmail.com', NULL, '$2y$12$eocgMAg1RJAqDxzAdPZP8OUybb39mPznWcKLoPnoenwU1HD4bUNQ.', NULL, NULL, NULL);
 
 --
 -- Indexes for dumped tables
@@ -405,12 +384,6 @@ ALTER TABLE `usaha`
   ADD PRIMARY KEY (`id_usaha`);
 
 --
--- Indexes for table `user`
---
-ALTER TABLE `user`
-  ADD PRIMARY KEY (`id_user`);
-
---
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -482,16 +455,10 @@ ALTER TABLE `usaha`
   MODIFY `id_usaha` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
--- AUTO_INCREMENT for table `user`
---
-ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
-
---
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
