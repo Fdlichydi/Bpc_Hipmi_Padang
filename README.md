@@ -64,3 +64,20 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## BPC HIPMI PADANG
+Website BPC HIPMI PADANG merupakan website profil company atau website yang memberikan informasi terkait tentang suatu oraganisasi
+
+## Cara Instalasi
+
+Import database dengan nama hipmi_padang
+lalu jalankan perintah php artisan serve untuk menjalankan web
+untuk login masuk ke URL : http://127.0.0.1:8000/login
+Username : admin@gmail.com
+Pass     : 123
+
+## Fitur
+- Agenda
+- Kegiatan
+- kepengurusan
+- perusahaan yang bergabung
